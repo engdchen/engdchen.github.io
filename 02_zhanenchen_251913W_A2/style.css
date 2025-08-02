@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'LibSerifItalic';
+    src: url(fonts/LibertinusSerif-Italic.woff);
+}
+
+@font-face {
+    font-family: 'LibSerifSemiBold';
+    src: url(fonts/LibertinusSerif-SemiBold.woff);
+}
+
+body {
+    background-image: url("images/perfumeBG.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin: 0;
+    /* removes the default margin */
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+h1 {
+    color: rgb(79, 79, 79);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1cm;
+    /* rounds corners */
+    display: inline-block;
+    font-size: 4.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: rgb(83, 124, 134);
+    font-size: 2em;
+    font-family: 'LibSerifSemiBold', sans-serif;
+}
+
+h3 {
+    color: rgb(91, 91, 91);
+    font-size: 1.5em;
+    font-family: 'LibSerifSemiBold', sans-serif;
+}
+
+p {
+    color: rgb(31, 31, 31);
+    font-size: 1.25em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav {
+    color: rgb(80, 102, 108);
+    font-size: 1.25em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.fullscreen {
+    text-align: center;
+}
+
+a {
+    color: rgb(91, 91, 91);
+}
+
+footer {
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'LibSerifItalic', sans-serif;
+    flex: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: rgb(47, 47, 47, 0.3);
+    border-radius: 5cm;
+    color: white;
+    font-size: 1.6em;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'LibSerifItalic', sans-serif;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.page {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(243, 248, 253);
+}
+
+#page1,
+#page2,
+#page3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page1 img {
+    width: 100%;
+    max-width: 200px;
+    vertical-align: middle;
+}
+
+.p1Head,
+.p2Head,
+.p3Head {
+    flex: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.EDC,
+.EDT,
+.EDP {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.EDC,
+.EDP {
+    background-color: rgb(221, 231, 230);
+}
+
+.EDCimg,
+.EDTimg,
+.EDPimg {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EDCtext,
+.EDTtext,
+.EDPtext {
+    flex: 3;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.EDCtext,
+.EDPtext {
+    background-color: rgba(243, 248, 253, 0.5);
+}
+
+.EDTtext {
+    background-color: rgba(221, 231, 230, 0.5);
+}
+
+.p1end {
+    flex: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.floral,
+.amber,
+.fresh,
+.wood {
+    flex-wrap: wrap;
+    padding: 20px;
+    display: flex;
+    margin: 20px;
+}
+
+.floral,
+.midNotes1 {
+    background-color: rgb(237, 224, 226);
+}
+
+.amber {
+    background-color: rgb(225, 222, 221);
+}
+
+.fresh {
+    background-color: rgb(221, 231, 230);
+}
+
+.wood,
+.topNotes1,
+.baseNotes1 {
+    background-color: rgb(255, 243, 221);
+}
+
+#page2 h3 {
+    color: rgb(179, 179, 179);
+}
+
+.floralMain,
+.amberMain,
+.freshMain,
+.woodMain {
+    flex: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(247, 253, 255, 0.4);
+}
+
+.floral h2,
+.floral p,
+.midNotes h2,
+.midNotes p {
+    color: rgb(159, 139, 150);
+}
+
+.amber h2,
+.amber p,
+.topNotes h2,
+.topNotes p,
+.baseNotes h2,
+.baseNotes p {
+    color: rgb(124, 108, 97);
+}
+
+.fresh h2,
+.fresh p {
+    color: rgb(83, 124, 134);
+}
+
+.wood h2,
+.wood p {
+    color: rgb(79, 60, 45);
+}
+
+.floralsub1,
+.floralsub2,
+.ambersub1,
+.ambersub2,
+.freshsub1,
+.freshsub2,
+.woodsub1,
+.woodsub2 {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.floralsub1,
+.ambersub1,
+.freshsub1,
+.woodsub1 {
+    background-color: rgba(242, 248, 255, 0.5);
+}
+
+.floralsub2,
+.ambersub2,
+.freshsub2,
+.woodsub2 {
+    background-color: rgba(247, 253, 255, 0.4);
+}
+
+.topNotes1,
+.midNotes1,
+.baseNotes1,
+.topNotes2,
+.midNotes2,
+.baseNotes2 {
+    flex: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.topNotes2,
+.midNotes2,
+.baseNotes2 {
+    background-color: white;
+}
+
+.game{
+    flex: 100%;
+    height:700px;
+}
+
+.game h2, .game p, .game h3 {
+    text-align: center;
+    align-items: center;
+}
+
+.qr {
+    text-align: center;
+    color: rgb(123, 145, 152);
+}
+
+.navBar {
+    background: rgba(43, 43, 43, 0.7);
+    padding: 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#menuBtn {
+    display: none;
+}
+
+.menuShow {
+    display: block;
+}
+
+@media (min-width:801px) {
+    h1 {
+        font-size: 6.25em;
+    }
+
+    p,
+    nav {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:800px) {
+
+    /*make a menu items vertical*/
+    nav ul li {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    #menuBtn {
+        display: block;
+    }
+
+    /*hide the menu item list*/
+    nav ul {
+        display: none;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    .EDCimg,
+    .EDTimg,
+    .EDPimg,
+    .EDCtext,
+    .EDTtext,
+    .EDPtext {
+        flex: 100%;
+    }
+
+    .floralsub1,
+    .floralsub2,
+    .ambersub1,
+    .ambersub2,
+    .freshsub1,
+    .freshsub2,
+    .woodsub1,
+    .woodsub2 {
+        flex: 100%;
+    }
+}
+
+#perfID {
+    position: relative;
+    width: 10vw;
+    transition: all 0.5s;
+}
+
+#perfID.shrink {
+    width: 5vw;
+    opacity: 0;
+}
+
+@keyframes perfFrames{
+10%{rotate:36deg}
+20%{rotate:72deg}
+30%{rotate:108deg}
+40%{rotate:144deg}
+50%{rotate:180deg}
+60%{rotate:216deg}
+70%{rotate:252deg}
+80%{rotate:288deg}
+90%{rotate:324deg}
+100%{rotate:360deg}
+}
+#perfID.anim{animation: perfFrames 1s;}
