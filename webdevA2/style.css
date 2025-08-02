@@ -209,8 +209,6 @@ main {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
     background-color: rgba(247, 253, 255, 0.4);
 }
 
@@ -410,4 +408,5 @@ nav ul li {
 90%{rotate:324deg}
 100%{rotate:360deg}
 }
+
 #perfID.anim{animation: perfFrames 1s;}
