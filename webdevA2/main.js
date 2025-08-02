@@ -124,8 +124,3 @@ function reportWindowSize() {
 reportWindowSize();
 
 window.addEventListener("resize", reportWindowSize);//when resize, update report
-
-// upload onto github get qr code 3%
-// check image aspect ratios
-// final check onto validators
-// if do all well i think can submit tdy
